@@ -1,0 +1,4 @@
+name: WebNetHubPlugin
+version: '${version}'
+main: webhead1104.webnethubplugin.WebNetHubPlugin
+api-version: '1.20'
