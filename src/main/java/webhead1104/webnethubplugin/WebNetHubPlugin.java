@@ -1,32 +1,34 @@
-package webhead1104.webnethubplugin;
+package webhead1104.WebNetHubPlugin;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.Location;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
 import org.bukkit.plugin.java.JavaPlugin;
-import webhead1104.webnethubplugin.listeners.ClickListener;
-import webhead1104.webnethubplugin.listeners.JoinListener;
+import webhead1104.webnethubplugin.commands.AdminCommand;
+import webhead1104.webnethubplugin.commands.MenuCommand;
+import webhead1104.webnethubplugin.commands.SpawnCommand;
+import webhead1104.webnethubplugin.listeners.*;
+import webhead1104.webnethubplugin.utils.Items;
 
+import java.io.File;
 import java.util.List;
 
 public final class WebNetHubPlugin extends JavaPlugin {
 
-    public ItemStack compass = new ItemStack(Material.COMPASS);
-    public ItemStack bedwarsLobby = new ItemStack(Material.RED_BED);
+    public static WebNetHubPlugin INSTANCE;
+    Items items;
+    public Inventory compassMenu = Bukkit.createInventory(null, 54, ChatColor.BLACK + "Game Selector");
     @Override
     public void onEnable() {
-        ItemMeta compassMeta = compass.getItemMeta();
-        compassMeta.setDisplayName(ChatColor.RED + "Game Selector");
-        compassMeta.setLore(List.of(ChatColor.GOLD + "Click to select a game!"));
-        compass.setItemMeta(compassMeta);
-
-        ItemMeta bedwarsLobbyMeta = bedwarsLobby.getItemMeta();
-        bedwarsLobbyMeta.setDisplayName(ChatColor.RED + "Click to play bedwars!");
-        bedwarsLobby.setItemMeta(bedwarsLobbyMeta);
-
+        File file = new File("plugins/WebNetHubPlugin/config.yml");
+        if(!file.exists())
+            this.saveResource("config.yml", false);
+        INSTANCE = this;
+        items = new Items();
         registerListeners();
-
+        registerCommands();
     }
 
     @Override
@@ -34,11 +36,40 @@ public final class WebNetHubPlugin extends JavaPlugin {
         // Plugin shutdown logic
     }
 
-
     public void registerListeners() {
         getServer().getPluginManager().registerEvents(new JoinListener(this), this);
+        getServer().getPluginManager().registerEvents(new InventoryClickListener(this), this);
         getServer().getPluginManager().registerEvents(new ClickListener(this), this);
+        getServer().getPluginManager().registerEvents(new BlockPlaceListener(this), this);
+        getServer().getPluginManager().registerEvents(new BlockBreakListener(this), this);
+
     }
 
+    public void registerCommands() {
+        getCommand("menu").setExecutor(new MenuCommand(this));
+        getCommand("menu").setAliases(List.of("gamemenu","games"));
+        getCommand("spawn").setExecutor(new SpawnCommand(this));
+        getCommand("hubadmin").setExecutor(new AdminCommand(this));
+    }
 
+    public void gameMenu(Player player) {
+        compassMenu.setItem(20,items.bedwarsLobby);
+        compassMenu.setItem(24, items.comingSoon);
+        player.openInventory(compassMenu);
+    }
+
+    public Items getItems() {
+        return items;
+    }
+
+    public Location getSpawnLocation() {
+        return new Location(
+                Bukkit.getWorld("world"),
+                getConfig().getDouble("x"),
+                getConfig().getDouble("y"),
+                getConfig().getDouble("z"),
+                (float) getConfig().getDouble("yaw"),
+                (float) getConfig().getDouble("pitch")
+        );
+    }
 }

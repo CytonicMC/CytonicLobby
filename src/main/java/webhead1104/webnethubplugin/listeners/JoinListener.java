@@ -1,5 +1,7 @@
 package webhead1104.webnethubplugin.listeners;
 
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -16,9 +18,10 @@ public class JoinListener implements Listener {
     @EventHandler
     private void onJoin(PlayerJoinEvent event) {
         Player p = event.getPlayer();
-
         p.setInvulnerable(true);
         p.getInventory().clear();
+        p.getInventory().setItem(0,plugin.getItems().compass);
+        p.teleport(plugin.getSpawnLocation());
 
 
 
