@@ -1,4 +1,4 @@
-package webhead1104.webnethubplugin.utils;
+package webhead1104.webnetlobby.utils;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -9,7 +9,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
-import webhead1104.webnethubplugin.WebNetHubPlugin;
+import webhead1104.webnetlobby.WebNetLobby;
 
 import java.util.HashMap;
 import java.util.List;
@@ -17,7 +17,7 @@ import java.util.Map;
 
 public class Items {
 
-    private final WebNetHubPlugin plugin = WebNetHubPlugin.INSTANCE;
+    private final WebNetLobby plugin = WebNetLobby.INSTANCE;
     private final Map<String, ItemStack> itemRegistry = new HashMap<>();
     public NamespacedKey NAMESPACE = new NamespacedKey(plugin, "hubID");
     public NamespacedKey MOVE_BLACKLIST = new NamespacedKey(plugin, "move_blacklist");

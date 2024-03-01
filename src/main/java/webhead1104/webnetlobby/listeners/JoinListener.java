@@ -1,17 +1,15 @@
-package webhead1104.webnethubplugin.listeners;
+package webhead1104.webnetlobby.listeners;
 
-import org.bukkit.Bukkit;
-import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
-import webhead1104.webnethubplugin.WebNetHubPlugin;
+import webhead1104.webnetlobby.WebNetLobby;
 
 public class JoinListener implements Listener {
 
-    WebNetHubPlugin plugin;
-    public JoinListener(WebNetHubPlugin plugin) {
+    WebNetLobby plugin;
+    public JoinListener(WebNetLobby plugin) {
         this.plugin = plugin;
     }
 

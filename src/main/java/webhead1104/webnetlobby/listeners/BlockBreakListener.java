@@ -1,16 +1,16 @@
-package webhead1104.webnethubplugin.listeners;
+package webhead1104.webnetlobby.listeners;
 
 import org.bukkit.GameMode;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
-import webhead1104.webnethubplugin.WebNetHubPlugin;
+import webhead1104.webnetlobby.WebNetLobby;
 
 public class BlockBreakListener implements Listener {
 
-    WebNetHubPlugin plugin;
+    WebNetLobby plugin;
 
-    public BlockBreakListener(WebNetHubPlugin plugin) {
+    public BlockBreakListener(WebNetLobby plugin) {
         this.plugin = plugin;
     }
 

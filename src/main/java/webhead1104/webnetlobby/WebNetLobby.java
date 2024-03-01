@@ -1,4 +1,4 @@
-package webhead1104.WebNetHubPlugin;
+package webhead1104.webnetlobby;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -6,18 +6,18 @@ import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.plugin.java.JavaPlugin;
-import webhead1104.webnethubplugin.commands.AdminCommand;
-import webhead1104.webnethubplugin.commands.MenuCommand;
-import webhead1104.webnethubplugin.commands.SpawnCommand;
-import webhead1104.webnethubplugin.listeners.*;
-import webhead1104.webnethubplugin.utils.Items;
+import webhead1104.webnetlobby.commands.AdminCommand;
+import webhead1104.webnetlobby.commands.MenuCommand;
+import webhead1104.webnetlobby.commands.SpawnCommand;
+import webhead1104.webnetlobby.listeners.*;
+import webhead1104.webnetlobby.utils.Items;
 
 import java.io.File;
 import java.util.List;
 
-public final class WebNetHubPlugin extends JavaPlugin {
+public final class WebNetLobby extends JavaPlugin {
 
-    public static WebNetHubPlugin INSTANCE;
+    public static WebNetLobby INSTANCE;
     Items items;
     public Inventory compassMenu = Bukkit.createInventory(null, 54, ChatColor.BLACK + "Game Selector");
     @Override

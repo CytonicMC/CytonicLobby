@@ -1,4 +1,4 @@
-package webhead1104.webnethubplugin.commands;
+package webhead1104.webnetlobby.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -6,11 +6,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
-import webhead1104.webnethubplugin.WebNetHubPlugin;
+import webhead1104.webnetlobby.WebNetLobby;
 
 public class SpawnCommand implements CommandExecutor {
-    WebNetHubPlugin plugin;
-    public SpawnCommand(WebNetHubPlugin plugin) {
+    WebNetLobby plugin;
+    public SpawnCommand(WebNetLobby plugin) {
         this.plugin = plugin;
     }
 

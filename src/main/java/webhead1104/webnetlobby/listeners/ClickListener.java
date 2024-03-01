@@ -1,14 +1,15 @@
-package webhead1104.webnethubplugin.listeners;
+package webhead1104.webnetlobby.listeners;
 
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
+import webhead1104.webnetlobby.WebNetLobby;
 
 public class ClickListener implements Listener {
 
-    webhead1104.WebNetHubPlugin.WebNetHubPlugin plugin;
-    public ClickListener(WebNetHubPlugin plugin) {
+    WebNetLobby plugin;
+    public ClickListener(WebNetLobby plugin) {
         this.plugin = plugin;
     }
 
