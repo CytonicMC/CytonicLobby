@@ -1,6 +1,6 @@
-name: WebNetHubPlugin
+name: WebNetLobby
 version: '1.0-SNAPSHOT'
-main: webhead1104.webnethubplugin.WebNetHubPlugin
+main: webhead1104.webnetlobby.WebNetLobby
 api-version: '1.20'
 authors:
   - Webhead1104

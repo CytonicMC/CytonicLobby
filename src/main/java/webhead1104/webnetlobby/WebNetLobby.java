@@ -20,9 +20,10 @@ public final class WebNetLobby extends JavaPlugin {
     public static WebNetLobby INSTANCE;
     Items items;
     public Inventory compassMenu = Bukkit.createInventory(null, 54, ChatColor.BLACK + "Game Selector");
+    public Inventory lobbyMenu = Bukkit.createInventory(null,54,ChatColor.BLUE + "Lobby Selector");
     @Override
     public void onEnable() {
-        File file = new File("plugins/WebNetHubPlugin/config.yml");
+        File file = new File("plugins/WebNetLobby/config.yml");
         if(!file.exists())
             this.saveResource("config.yml", false);
         INSTANCE = this;
@@ -42,6 +43,8 @@ public final class WebNetLobby extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new ClickListener(this), this);
         getServer().getPluginManager().registerEvents(new BlockPlaceListener(this), this);
         getServer().getPluginManager().registerEvents(new BlockBreakListener(this), this);
+        getServer().getPluginManager().registerEvents(new ItemDropListener(this), this);
+        getServer().getPluginManager().registerEvents(new QuitListener(this), this);
 
     }
 
@@ -56,6 +59,14 @@ public final class WebNetLobby extends JavaPlugin {
         compassMenu.setItem(20,items.bedwarsLobby);
         compassMenu.setItem(24, items.comingSoon);
         player.openInventory(compassMenu);
+    }
+    public void lobbyMenu(Player player) {
+        lobbyMenu.setItem(10,items.lobby1);
+        lobbyMenu.setItem(11,items.lobby2);
+        lobbyMenu.setItem(12,items.lobby3);
+        lobbyMenu.setItem(13,items.lobby4);
+        lobbyMenu.setItem(14,items.lobby5);
+        player.openInventory(lobbyMenu);
     }
 
     public Items getItems() {

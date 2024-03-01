@@ -11,6 +11,7 @@ import webhead1104.webnetlobby.WebNetLobby;
 public class AdminCommand implements CommandExecutor {
 
     WebNetLobby plugin;
+
     public AdminCommand(WebNetLobby plugin) {
         this.plugin = plugin;
     }
@@ -18,9 +19,11 @@ public class AdminCommand implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] args) {
         Player player = (Player) commandSender;
-        if (player.hasPermission("webnet.hub.reload")) {
-            plugin.reloadConfig();
-        }else player.sendMessage(ChatColor.RED + "You cannot do this");
+        if (args[0].equalsIgnoreCase("reload")) {
+            if (player.hasPermission("webnet.hub.reload")) {
+                plugin.reloadConfig();
+            } else player.sendMessage(ChatColor.RED + "You cannot do this");
+        }
         return true;
     }
 }
