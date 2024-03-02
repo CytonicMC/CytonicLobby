@@ -1,5 +1,6 @@
 package webhead1104.webnetlobby;
 
+import com.yapzhenyie.GadgetsMenu.api.GadgetsMenuAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -45,6 +46,8 @@ public final class WebNetLobby extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new BlockBreakListener(this), this);
         getServer().getPluginManager().registerEvents(new ItemDropListener(this), this);
         getServer().getPluginManager().registerEvents(new QuitListener(this), this);
+        getServer().getPluginManager().registerEvents(new HungerDepleteListener(this), this);
+        getServer().getPluginManager().registerEvents(new DeathListener(this), this);
 
     }
 

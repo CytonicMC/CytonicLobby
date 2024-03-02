@@ -28,6 +28,8 @@ public class JoinListener implements Listener {
         p.getInventory().setItem(0,plugin.getItems().compass);
         p.getInventory().setItem(8,plugin.getItems().lobbySelector);
         p.teleport(plugin.getSpawnLocation());
+        p.setHealth(20);
+        p.setSaturation(20);
         p.setGameMode(GameMode.SURVIVAL);
         if (!p.hasPlayedBefore()) {
             Bukkit.broadcastMessage(ChatColor.BLUE + rank + " " +ChatColor.DARK_GREEN + p.getName() + ChatColor.GOLD + " has joined for the first time!");
