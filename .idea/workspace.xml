@@ -4,27 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2244b491-61fe-4240-b8cd-550617fd3659" name="Changes" comment="join messages and lobby selector">
-      <change afterPath="$PROJECT_DIR$/src/main/java/webhead1104/webnetlobby/listeners/DeathListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/webhead1104/webnetlobby/listeners/HungerDepleteListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+    <list default="true" id="2244b491-61fe-4240-b8cd-550617fd3659" name="Changes" comment="Bug fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/webhead1104/webnetlobby/WebNetLobby.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/webhead1104/webnetlobby/WebNetLobby.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/webhead1104/webnetlobby/commands/AdminCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/webhead1104/webnetlobby/commands/AdminCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/webhead1104/webnetlobby/listeners/JoinListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/webhead1104/webnetlobby/listeners/JoinListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/webhead1104/webnetlobby/utils/Items.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/webhead1104/webnetlobby/utils/Items.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/WebNetLobby-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/WebNetLobby-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/InventoryClickListener.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/WebNetLobby.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webhead1104/webnetlobby/WebNetLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webhead1104/webnetlobby/WebNetLobby.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webhead1104/webnetlobby/listeners/JoinListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/webhead1104/webnetlobby/listeners/JoinListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,21 +69,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.WebNetLobby [assemble].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/JKNWE/IdeaProjects/WebNetLobby/build/libs/GadgetsMenu.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.WebNetLobby [assemble].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/JKNWE/IdeaProjects/WebNetLobby/build/libs/GadgetsMenu.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="WebNetLobby [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -164,7 +145,39 @@
       <option name="project" value="LOCAL" />
       <updated>1709321798408</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="a lot of things">
+      <option name="closed" value="true" />
+      <created>1709403146252</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709403146254</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Bug fixes">
+      <option name="closed" value="true" />
+      <created>1709403158569</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709403158569</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Bug fixes">
+      <option name="closed" value="true" />
+      <created>1709403167160</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709403167160</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Bug fixes">
+      <option name="closed" value="true" />
+      <created>1709403182940</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709403182940</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +193,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="join messages and lobby selector" />
-    <option name="LAST_COMMIT_MESSAGE" value="join messages and lobby selector" />
+    <MESSAGE value="a lot of things" />
+    <MESSAGE value="Bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes" />
   </component>
 </project>
