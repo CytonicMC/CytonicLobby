@@ -1,6 +1,6 @@
-name: WebNetLobby
+name: CytonicLobby
 version: '1.0-SNAPSHOT'
-main: webhead1104.webnetlobby.WebNetLobby
+main: webhead1104.cytoniclobby.CytonicLobby
 api-version: '1.20'
 authors:
   - Webhead1104
@@ -17,12 +17,12 @@ commands:
     description: the main hub plugin admin command
 
 permissions:
-  webnet.hub.*:
+  cytonic.hub.*:
     default: op
     description: A wildcard permission
     children:
-      - webnet.hub.reload
-  webnet.hub.reload:
+      - cytonic.hub.reload
+  cytonic.hub.reload:
     description: A permission to reload the config
     default: op
 
