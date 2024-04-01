@@ -1,6 +1,6 @@
 name: CytonicLobby
-version: '1.0-SNAPSHOT'
-main: webhead1104.cytoniclobby.CytonicLobby
+version: '0.01'
+main: net.cytonic.cytoniclobby.CytonicLobby
 api-version: '1.20'
 authors:
   - Webhead1104
