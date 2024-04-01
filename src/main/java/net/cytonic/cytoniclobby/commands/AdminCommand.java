@@ -11,7 +11,6 @@ import net.cytonic.cytoniclobby.CytonicLobby;
 public class AdminCommand implements CommandExecutor {
 
     CytonicLobby plugin;
-
     public AdminCommand(CytonicLobby plugin) {
         this.plugin = plugin;
     }

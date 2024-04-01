@@ -9,7 +9,6 @@ import net.cytonic.cytoniclobby.CytonicLobby;
 public class BlockPlaceListener implements Listener {
 
     CytonicLobby plugin;
-
     public BlockPlaceListener(CytonicLobby plugin) {
         this.plugin = plugin;
     }

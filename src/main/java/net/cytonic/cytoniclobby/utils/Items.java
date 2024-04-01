@@ -22,7 +22,6 @@ public class Items {
     public NamespacedKey ALLOWED_SLOTS = new NamespacedKey(plugin, "allowed_slots");
     public NamespacedKey NO_DROP = new NamespacedKey(plugin, "no_drop");
 
-
     public ItemStack compass = createItem(ChatColor.RED + "Click to open the game menu!","COMPASS",Material.COMPASS);
     public ItemStack bedwarsLobby = createItem(ChatColor.RED + "Click to play bedwars!", "BEDWARS",Material.RED_BED);
     public ItemStack comingSoon = createItem(ChatColor.RED +""+ ChatColor.BOLD + "COMING SOON", "COMING_SOON",Material.BLACK_CONCRETE);
@@ -33,13 +32,6 @@ public class Items {
     public ItemStack lobby3 = createItem(ChatColor.AQUA + "Lobby 3","LOBBY_3",Material.IRON_AXE,"Click to go to lobby 3");
     public ItemStack lobby4 = createItem(ChatColor.AQUA + "Lobby 4","LOBBY_4",Material.GOLDEN_AXE,"Click to go to lobby 4");
     public ItemStack lobby5 = createItem(ChatColor.AQUA + "Lobby 5","LOBBY_5",Material.DIAMOND_AXE,"Click to go to lobby 5");
-
-
-
-
-
-
-
 
     private ItemStack createItem(String displayname, String id, Material type, boolean noMove, boolean noDrop, List<Integer> allowedSlots, String... lore){
         ItemStack item = new ItemStack(type);
@@ -69,11 +61,9 @@ public class Items {
         meta.setDisplayName(ChatColor.RESET + displayname);
         meta.setLore(List.of(lore));
         meta.addItemFlags(ItemFlag.values());
-
         PersistentDataContainer pdc = meta.getPersistentDataContainer();
         meta.setUnbreakable(true);
         pdc.set(NAMESPACE, PersistentDataType.STRING, id);
-
         item.setItemMeta(meta);
         itemRegistry.put(id, item);
         return item;

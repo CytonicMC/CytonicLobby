@@ -11,7 +11,6 @@ import net.cytonic.cytoniclobby.CytonicLobby;
 public class ClickListener implements Listener {
 
     CytonicLobby plugin;
-
     public ClickListener(CytonicLobby plugin) {
         this.plugin = plugin;
     }
@@ -26,6 +25,5 @@ public class ClickListener implements Listener {
         if (event.getItem() != null && event.getItem().getItemMeta().getDisplayName().contains(ChatColor.AQUA + "Lobby Selector")) {
             plugin.lobbyMenu(event.getPlayer());
         }
-
     }
 }

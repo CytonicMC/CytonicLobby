@@ -8,7 +8,6 @@ import net.cytonic.cytoniclobby.CytonicLobby;
 public class QuitListener implements Listener {
 
     CytonicLobby plugin;
-
     public QuitListener(CytonicLobby plugin) {
         this.plugin = plugin;
     }

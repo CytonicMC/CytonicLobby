@@ -34,10 +34,5 @@ public class JoinListener implements Listener {
         if (!p.hasPlayedBefore()) {
             Bukkit.broadcastMessage(ChatColor.BLUE + rank + " " +ChatColor.DARK_GREEN + p.getName() + ChatColor.GOLD + " has joined for the first time!");
         }else Bukkit.broadcastMessage(ChatColor.BLUE + rank + " " +ChatColor.DARK_GREEN + p.getName() + ChatColor.GOLD +" joined the lobby");
-
-
-
-
-
     }
 }
